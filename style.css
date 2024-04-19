@@ -1,87 +1,97 @@
+/* Define custom color variables */
 :root {
-    --light-grey: #f5f6f7;
-    --dark-blue: #0a0a23;
-    --fcc-blue: #1b1b32;
-    --light-yellow: #fecc4c;
-    --dark-yellow: #feac32;
-    --light-pink: #ffadad;
-    --dark-red: #850000;
-    --light-green: #acd157;
-  }
-  
-  body {
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    background-color: var(--fcc-blue);
-    color: var(--light-grey);
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 680px;
-  }
-  
-  h1,
-  .container,
-  .output {
-    margin: 20px auto;
-  }
-  
-  label,
-  legend {
-    font-weight: bold;
-  }
-  
-  .input-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  button {
-    cursor: pointer;
-    text-decoration: none;
-    background-color: var(--light-yellow);
-    border: 2px solid var(--dark-yellow);
-  }
-  
-  button,
-  input,
-  select {
-    min-height: 24px;
-    color: var(--dark-blue);
-  }
-  
-  fieldset,
-  label,
-  button,
-  input,
-  select {
-    margin-bottom: 10px;
-  }
-  
-  .output {
-    border: 2px solid var(--light-grey);
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .output span {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  .surplus {
-    color: var(--light-pink);
-  }
-  
-  .deficit {
-    color: var(--light-green);
-  }
+  --light-grey: #f5f6f7; /* Light grey color */
+  --dark-blue: #0a0a23; /* Dark blue color */
+  --fcc-blue: #1b1b32; /* FCC blue color */
+  --light-yellow: #fecc4c; /* Light yellow color */
+  --dark-yellow: #feac32; /* Dark yellow color */
+  --light-pink: #ffadad; /* Light pink color */
+  --dark-red: #850000; /* Dark red color */
+  --light-green: #acd157; /* Light green color */
+}
+
+/* Styling for the body */
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif; /* Set font family */
+  font-size: 18px; /* Set font size */
+  background-color: var(--fcc-blue); /* Set background color using custom variable */
+  color: var(--light-grey); /* Set text color using custom variable */
+}
+
+/* Styling for headings */
+h1 {
+  text-align: center; /* Center align heading */
+}
+
+/* Styling for the main container */
+.container {
+  width: 90%; /* Set width */
+  max-width: 680px; /* Set maximum width */
+  margin: 20px auto; /* Center the container */
+}
+
+/* Styling for labels and legends */
+label,
+legend {
+  font-weight: bold; /* Set font weight to bold */
+}
+
+/* Styling for input containers */
+.input-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange children in column */
+}
+
+/* Styling for buttons */
+button {
+  cursor: pointer; /* Set cursor to pointer */
+  text-decoration: none; /* Remove default text decoration */
+  background-color: var(--light-yellow); /* Set background color using custom variable */
+  border: 2px solid var(--dark-yellow); /* Set border color using custom variable */
+}
+
+/* Styling for buttons, inputs, and selects */
+button,
+input,
+select {
+  min-height: 24px; /* Set minimum height */
+  color: var(--dark-blue); /* Set text color using custom variable */
+}
+
+/* Margin between elements */
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 10px; /* Set bottom margin */
+}
+
+/* Styling for output container */
+.output {
+  border: 2px solid var(--light-grey); /* Set border */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center align text */
+  margin: 20px auto; /* Center the container */
+}
+
+/* Hide element */
+.hide {
+  display: none; /* Hide the element */
+}
+
+/* Styling for output text */
+.output span {
+  font-weight: bold; /* Set font weight to bold */
+  font-size: 1.2em; /* Set font size */
+}
+
+/* Styling for surplus output */
+.surplus {
+  color: var(--light-pink); /* Set text color using custom variable */
+}
+
+/* Styling for deficit output */
+.deficit {
+  color: var(--light-green); /* Set text color using custom variable */
+}
